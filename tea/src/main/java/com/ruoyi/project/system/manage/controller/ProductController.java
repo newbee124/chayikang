@@ -1,22 +1,24 @@
-package com.ruoyi.project.system.home.controller;
+package com.ruoyi.project.system.manage.controller;
 
 import com.ruoyi.framework.web.controller.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-public class HomeController extends BaseController {
+@RequestMapping("/manage")
+public class ProductController extends BaseController {
 
-    @GetMapping("/home")
+    @GetMapping("/productManage")
     public String home(HttpServletRequest request, HttpServletResponse response) {
-        return "home";
+        return "manage/productManage";
     }
 
-    @GetMapping("/home/cpzx")
+    /*@GetMapping("/home/cpzx")
     public String cpzx(HttpServletRequest request, HttpServletResponse response) {
-        return "cpzx11";
-    }
+        return "manage/productManage";
+    }*/
 }

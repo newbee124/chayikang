@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+
+<html class="smart-design-mode">
+	<head>
+
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description">
+		<meta name="keywords">
+		<meta name="renderer" content="webkit">
+		<meta name="applicable-device" content="pc">
+		<meta http-equiv="Cache-Control" content="no-transform">
+		<title>产品中心-企业官网</title>
+		<link rel="icon" href="https://1212023914zrw.scd.wezhan.cn/Content/images/favicon.ico">
+		<link rel="shortcut icon" href="https://1212023914zrw.scd.wezhan.cn/Content/images/favicon.ico">
+		<link rel="bookmark" href="https://1212023914zrw.scd.wezhan.cn/Content/images/favicon.ico">
+		<link href="static/css/pcstyle.css" rel="stylesheet" type="text/css">
+		<link href="static/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="static/css/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="static/css/iconfont1.css" rel="stylesheet" type="text/css">
+		<link href="static/css/pager.css" rel="stylesheet" type="text/css">
+		<link href="static/css/hover-effects.css" rel="stylesheet" type="text/css">
+		<link href="static/css/antChain.css" rel="stylesheet" type="text/css">
+		
+		
+		
+		<!-- baique -->
+        <link rel='stylesheet' id='contact-form-7-css' href='static/bq/css/styles.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='rgs-css' href='static/bq/css/rgs.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='font-awesome-css' href='static/bq/css/font-awesome.min.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='main-styles-css' href='static/bq/css/style.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='fancyBox-css' href='static/bq/css/jquery.fancybox.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='responsive-css' href='static/bq/css/responsive.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='nectarslider-css' href='static/bq/css/nectar-slider.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='nectar-portfolio-css' href='static/bq/css/portfolio.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='select2-css' href='static/bq/css/select2.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='dynamic-css-css' href='static/bq/css/dynamic-combined.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='skin-material-css' href='static/bq/css/skin-material.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='js_composer_front-css' href='static/bq/css/js_composer.min.css' type='text/css' media='all'>
+
+
+		<link href="static/css/98475_Pc_zh-CN.css" rel="stylesheet">
+		<script src="static/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="static/js/jquery.lazyload.min.js" type="text/javascript"></script>
+		<script src="static/js/smart.animation.min.js" type="text/javascript"></script>
+		<script src="static/js/kino.razor.min.js" type="text/javascript"></script>
+		<script src="static/js/common.min.js" type="text/javascript"></script>
+		<script src="static/js/admin.validator.min.js" type="text/javascript"></script>
+		<script src="static/js/jquery.cookie.js" type="text/javascript"></script>
+		<script type='text/javascript' id='jssor-all' src='static/js/jssor.slider-22.2.16-all.min.js'></script>
+		<script type='text/javascript' id='slideshown' src='static/js/slideshow.js'></script>
+		<script type='text/javascript' id='jqPaginator' src='static/js/jqPaginator.min.js'></script>
+
+		<script type="text/javascript">
+			$.ajaxSetup({
+				cache: false,
+				beforeSend: function(jqXHR, settings) {
+					settings.data = settings.data && settings.data.length > 0 ? (settings.data + "&") : "";
+					settings.data = settings.data + "__RequestVerificationToken=" + $('input[name="__RequestVerificationToken"]').val();
+					return true;
+				}
+			});
+		</script>
+	</head>
+	<body id="smart-body" area="main">
+
+		<input type="hidden" id="pageinfo" value="98475" data-type="1" data-device="Pc" data-entityid="98475">
+		<input id="txtDeviceSwitchEnabled" value="show" type="hidden">
+
+		<script type="text/javascript">
+			$(function() {
+
+				if ("" == "True") {
+					$('#mainContentWrapper').addClass('translate');
+					$('#antChainWrap').fadeIn(500);
+
+					$('#closeAntChain').off('click').on('click', function() {
+						$('#antChainWrap').fadeOut('slow', function() {
+							$('#mainContentWrapper').removeClass('translate');
+						});
+						$(document).off("scroll", isWatchScroll);
+
+					});
+					$('#showQrcodeBtn').off('click').on('click', function() {
+						$('#qrCodeWrappper').toggleClass('qrCodeShow');
+					});
+					$(document).scroll(isWatchScroll)
+				}
+
+
+				function isWatchScroll() {
+					var scroH = $(document).scrollTop();
+					if (scroH >= 80) {
+						$('#mainContentWrapper').removeClass('translate');
+					} else {
+						$('#mainContentWrapper').addClass('translate');
+					}
+				}
+
+
+			})
+		</script>
+
+		<link href="static/css/view.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			function initialDeviceSwitch() {
+				var pageinfo = $("#pageinfo");
+				var l = window.location;
+				if (pageinfo.length == 0 && window.frames.length > 0) {
+					pageinfo = $(window.frames[0].document).find("#pageinfo");
+					l = window.frames[0].document.location;
+				}
+				$(".m-deviceSwitch").show();
+				if (pageinfo.length == 0) {
+					$(".m-deviceSwitch").hide();
+					return;
+				}
+				$("#secUrl").attr("data-host", l.host).attr("data-pathname", l.pathname).attr("data-search", l.search).attr(
+					"data-hash", l.hash);
+				var pagedevice = pageinfo.attr("data-device");
+				$(".m-deviceSwitch").find("li[data-device=" + pagedevice + "]").addClass("active").find("a").addClass("z-current");
+				$(".m-deviceSwitch").find("li").not(".active").click(function() {
+					var secUrl = $("#secUrl");
+					var pathname = secUrl.attr("data-pathname");
+					var search = secUrl.attr("data-search");
+					var hash = secUrl.attr("data-hash");
+					var npagedevice = $(this).attr("data-device");
+					var mobileUrl = "";
+					if (npagedevice == "Pc") {
+						mobileUrl = mobileUrl + pathname + search.replace("deviceModel=mobile", "deviceModel=pc") + hash;
+					} else if (npagedevice == "Mobile") {
+						var toUrl = pathname + search.replace("deviceModel=pc", "deviceModel=mobile") + hash;
+						mobileUrl = mobileUrl + "/Runtime/MobileContainer?url=" + encodeURIComponent(toUrl);
+					}
+					$.ajax({
+						cache: false,
+						url: "/Common/ChangeRunTimeDeviceMode",
+						type: "post",
+						data: {
+							type: npagedevice
+						},
+						dataType: "json",
+						success: function(result) {
+							if (result.IsSuccess) {
+								window.top.location.href = mobileUrl;
+							}
+						},
+						error: function() {}
+					});
+				});
+			}
+			$(function() {
+				if ($("#prevMainFrame").length > 0) {
+					$("#prevMainFrame").load(initialDeviceSwitch);
+				} else {
+					initialDeviceSwitch();
+				}
+			});
+		</script>
+		<div id="mainContentWrapper" style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
+     position: relative; width: 100%;min-width:1200px;background-size: auto;"
+		 bgscroll="none">
+			<div style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
+         position: relative; width: 100%;min-width:1200px;background-size: auto;"
+			 bgscroll="none">
+				<div class=" header" cpid="98663" id="smv_Area0" style="width: 1200px; height: 65px;  position: relative; margin: 0 auto">
+					<div id="smv_tem_110_41" ctype="banner" class="esmartMargin smartAbs " cpid="98663" cstyle="Style2" ccolor="Item0"
+					 areaid="Area0" iscontainer="True" pvid="" tareaid="Area0" re-direction="y" daxis="Y" isdeletable="True" style="height: 65px; width: 100%; left: 0px; top: 0px;z-index:2;">
+						<div class="yibuFrameContent tem_110_41  banner_Style2  " style="overflow:visible;;">
+							<div class="fullcolumn-inner smAreaC" id="smc_Area0" cid="tem_110_41" style="width:1200px">
+								<div id="smv_tem_112_41" ctype="logoimage" class="esmartMargin smartAbs " cpid="98663" cstyle="Style1" ccolor="Item0"
+								 areaid="Area0" iscontainer="False" pvid="tem_110_41" tareaid="Area0" re-direction="all" daxis="All"
+								 isdeletable="True" style="height: 44px; width: 89px; left: 0px; top: 11px;z-index:4;">
+									<div class="yibuFrameContent tem_112_41  logoimage_Style1  " style="overflow:visible;;">
+										<div class="w-image-box" data-filltype="0" id="div_tem_112_41">
+											<a target="_self" href="">
+												<img src="static/picture/-45412.png" alt="白色logo" title="白色logo" id="img_smv_tem_112_41" style="width: 89px; height:44px;">
+											</a>
+										</div>
+
+										<script type="text/javascript">
+											$(function() {
+												InitImageSmv("tem_112_41", "89", "44", "0");
+											});
+										</script>
+
+									</div>
+								</div>
+								<div id="smv_tem_111_41" ctype="nav" class="esmartMargin smartAbs " cpid="98663" cstyle="Style1" ccolor="Item0"
+								 areaid="Area0" iscontainer="False" pvid="tem_110_41" tareaid="Area0" re-direction="all" daxis="All"
+								 isdeletable="True" style="height: 65px; width: 835px; left: 366px; top: 0px;z-index:3;">
+									<div class="yibuFrameContent tem_111_41  nav_Style1  " style="overflow:visible;;">
+										<div id="nav_tem_111_41" class="nav_pc_t_1">
+											<ul class="w-nav" navstyle="style1">
+												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
+													<div class="w-nav-item">
+														<i class="w-nav-item-line"></i>
+														<a href="sy.html" target="_self" class="w-nav-item-link">
+															<span class="mw-iconfont"></span>
+															<span class="w-link-txt">首页</span>
+														</a>
+
+													</div>
+												</li>
+												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
+													<div class="w-nav-item">
+														<i class="w-nav-item-line"></i>
+														<a href="ppjs.html" target="_self" class="w-nav-item-link">
+															<span class="mw-iconfont"></span>
+															<span class="w-link-txt">品牌介绍</span>
+														</a>
+
+													</div>
+												</li>
+												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
+													<div class="w-nav-item">
+														<i class="w-nav-item-line"></i>
+														<a href="" target="_self" class="w-nav-item-link">
+															<span class="mw-iconfont"></span>
+															<span class="w-link-txt">产品中心</span>
+														</a>
+
+													</div>
+												</li>
+												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
+													<div class="w-nav-item">
+														<i class="w-nav-item-line"></i>
+														<a href="xwhd.html" target="_self" class="w-nav-item-link">
+															<span class="mw-iconfont"></span>
+															<span class="w-link-txt">新闻活动</span>
+														</a>
+
+													</div>
+												</li>
+												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
+													<div class="w-nav-item">
+														<i class="w-nav-item-line"></i>
+														<a href="zshz.html" target="_self" class="w-nav-item-link">
+															<span class="mw-iconfont"></span>
+															<span class="w-link-txt">招商合作</span>
+														</a>
+
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<script>
+											$(function() {
+												var $nav = $("#smv_tem_111_41 .w-nav");
+												var $inner = $("#smv_tem_111_41 .w-nav-inner");
+												var rightBorder = parseInt($nav.css("border-right-width"));
+												var leftBorder = parseInt($nav.css("border-left-width"));
+												var topBorder = parseInt($nav.css("border-top-width"));
+												var bottomBorder = parseInt($nav.css("border-bottom-width"));
+												var height = $("#smv_tem_111_41").height();
+												var width = $('#smv_tem_111_41').width();
+												$nav.height(height - topBorder - bottomBorder);
+												$nav.width(width - leftBorder - rightBorder);
+												$inner.height(height - topBorder - bottomBorder).css("line-height", height - topBorder - bottomBorder +
+													"px");
+
+
+												$('#nav_tem_111_41').find('.w-subnav').hide();
+												var $this, item, itemAll;
+												$('#nav_tem_111_41').off('mouseenter').on('mouseenter', '.w-nav-inner', function() {
+													itemAll = $('#nav_tem_111_41').find('.w-subnav');
+													$this = $(this);
+													item = $this.find('.w-subnav');
+													item.slideDown();
+												}).off('mouseleave').on('mouseleave', '.w-nav-inner', function() {
+													item = $(this).find('.w-subnav');
+													item.stop().slideUp(function() {
+														////设置回调，防止slidUp自动加上height和width导致在子导航中设置height和width无效
+														//item.css({
+														//    height: '',
+														//    width: ''
+														//})
+													});
+												});
+												SetNavSelectedStyle('nav_tem_111_41'); //选中当前导航
+											});
+										</script>
+									</div>
+								</div>
+							</div>
+							<div id="bannerWrap_tem_110_41" class="fullcolumn-outer" style="position: absolute; top: 0px; bottom: 0px;">
+							</div>
+
+							<script type="text/javascript">
+								$(function() {
+									var resize = function() {
+										$("#smv_tem_110_41 >.yibuFrameContent>.fullcolumn-inner").width($("#smv_tem_110_41").parent().width());
+										$('#bannerWrap_tem_110_41').fullScreen(function(t) {
+											if (VisitFromMobile()) {
+												t.css("min-width", t.parent().width())
+											}
+										});
+										//固定屏幕
+										var scrollTopCss = {
+											'position': 'fixed',
+											'top': 0,
+											'left': 0,
+											'marginTop': 0,
+											'zIndex': 99999
+										};
+										var flag = true;
+										var ischangeData = true;
+										var docTop = $('#smv_tem_110_41').offset().top;
+										var initCss = $('#smv_tem_110_41').attr('style');
+										var bannerLeft = $('#bannerWrap_tem_110_41').css("left");
+										if (!sessionStorage.getItem('initCss')) {
+											sessionStorage.setItem('initCss', initCss);
+										}
+										if (!sessionStorage.getItem('docTop')) {
+											sessionStorage.setItem('docTop', docTop);
+										}
+										if (!sessionStorage.getItem('bannerLeft')) {
+											sessionStorage.setItem('bannerLeft', bannerLeft);
+										}
+										$(window).off('scroll.fixedBanner').on('scroll.fixedBanner', function() {
+											//如果拖动了容器的大小，则重新取一次top 和 style
+											var newdocTop = $('#smv_tem_110_41').offset().top;
+											var newinitCss = $('#smv_tem_110_41').attr('style');
+											if (newinitCss != sessionStorage.getItem('initCss')) {
+												//剔除滚动后 赋的fixed这块的属性的影响
+												var position = $('#smv_tem_110_41').css("position");
+												if (position == "absolute") {
+													sessionStorage.setItem('docTop', newdocTop);
+													sessionStorage.setItem('initCss', initCss);
+													//docTop = newdocTop;
+													//initCss = newinitCss;
+												}
+											}
+											currentTop = Number(sessionStorage.getItem('docTop')) - $(this).scrollTop();
+											if (currentTop < 0) {
+												$('#smv_tem_110_41').css(scrollTopCss);
+												$('#bannerWrap_tem_110_41').css("left", 0).addClass("fixed");
+												if ("Prev" == "Design" && $("#smv_tem_110_41").parents(".header").length == 0) {
+													$('#smv_tem_110_41').disableDrag();
+													$('#smv_tem_110_41').disableResize();
+												}
+
+											} else {
+												$('#smv_tem_110_41').attr('style', sessionStorage.getItem('initCss'));
+												$('#bannerWrap_tem_110_41').css("left", sessionStorage.getItem('bannerLeft')).removeClass("fixed");
+												if ("Prev" == "Design" && $("#smv_tem_110_41").parents(".header").length == 0) {
+													$('#smv_tem_110_41').enableDrag();
+													$('#smv_tem_110_41').enableResize();
+												}
+											}
+										});
+									}
+									$(window).resize(function(e) {
+										if (e.target == this) {
+											resize();
+										}
+									});
+									resize();
+								});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-layout-wrapper" id="smv_AreaMainWrapper" style="background-color: transparent; background-image: none;
+         background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;background-size: auto;"
+			 bgscroll="none">
+				<div class="main-layout" id="tem-main-layout11" style="width: 100%;">
+					<div style="display: none">
+
+					</div>
+					<div class="" id="smv_MainContent" rel="mainContentWrapper" style="width: 100%; min-height: 300px; position: relative; ">
+
+						<div class="smvWrapper" style="min-width:1200px;  position: relative; background-color: transparent; background-image: none; background-repeat: no-repeat; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;background-position:0 0;background-size:auto;"
+						 bgscroll="none">
+							<div class="smvContainer" id="smv_Main" cpid="98475" style="min-height:400px;width:1200px;position: relative; ">
+								<div id="smv_con_5_55" ctype="slideset" class="esmartMargin smartAbs " cpid="98475" cstyle="Style1" ccolor="Item0"
+								 areaid="" iscontainer="True" pvid="" tareaid="" re-direction="y" daxis="Y" isdeletable="True" style="height: 350px; width: 100%; left: 0px; top: 0px;z-index:2;">
+									<div class="yibuFrameContent con_5_55  slideset_Style1  " style="overflow:visible;;">
+										<!--w-slide-->
+										<div class="w-slide" id="slider_smv_con_5_55">
+											<div class="w-slide-inner" data-u="slides">
+
+												<div class="content-box" data-area="Area0">
+													<div id="smc_Area0" cid="con_5_55" class="smAreaC slideset_AreaC">
+														<div id="smv_con_6_55" ctype="text" smanim='{"delay":0.75,"duration":0.75,"direction":"","animationName":"zoomIn","infinite":"1"}'
+														 class="esmartMargin smartAbs animated" cpid="98475" cstyle="Style1" ccolor="Item2" areaid="Area0"
+														 iscontainer="False" pvid="con_5_55" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 95px; width: 541px; left: 329px; top: 126px;z-index:2;">
+															<div class="yibuFrameContent con_6_55  text_Style1  " style="overflow:hidden;;">
+																<div id='txt_con_6_55' style="height: 100%;">
+																	<div class="editableContent" id="txtc_con_6_55" style="height: 100%; word-wrap:break-word;">
+																		<p style="padding-bottom: 0px;text-align:center"><span style="line-height:1.75"><span style="color:#ffffff; font-family:Source Han Sans, Geneva, sans-serif"><span
+																					 style="font-size:32px">产品中心</span></span></span></p>
+
+																		<p style="padding-bottom: 0px;text-align:center"><span style="letter-spacing:7px"><span style="line-height:1.75"><span
+																					 style="color:#dddddd"><span style="font-size:14px"><span style="font-family:&quot;Source Han Sans&quot;,Geneva,sans-serif">PRODUCT
+																								CENTER</span></span></span></span></span></p>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="content-box-inner" style="background-image:url(static/image/-45550.jpg);background-position:50% 50%;background-repeat:cover;background-size:cover;background-color:;opacity:1"></div>
+
+												</div>
+											</div>
+											<!-- Bullet Navigator -->
+											<div data-u="navigator" class="w-slide-btn-box  f-hide " data-autocenter="1">
+												<!-- bullet navigator item prototype -->
+												<div class="w-slide-btn" data-u="prototype"></div>
+											</div>
+
+											<!-- 1Arrow Navigator -->
+											<span data-u="arrowleft" class="w-slide-arrowl  slideArrow  f-hide  " data-autocenter="2" id="left_con_5_55">
+												<i class="w-itemicon mw-iconfont">&#xb133;</i>
+											</span>
+											<span data-u="arrowright" class="w-slide-arrowr slideArrow  f-hide " data-autocenter="2" id="right_con_5_55">
+												<i class="w-itemicon mw-iconfont">&#xb132;</i>
+											</span>
+										</div>
+										<!--/w-slide-->
+										<script type="text/javascript">
+											con_5_55_page = 1;
+											con_5_55_sliderset3_init = function() {
+												var jssor_1_options_con_5_55 = {
+													$AutoPlay: "False" == "True" ? false : "on" == "on", //自动播放
+													$PlayOrientation: 1, //2为向上滑，1为向左滑
+													$Loop: 1, //循环
+													$Idle: parseInt("4000"), //切换间隔
+													$SlideDuration: "1000", //延时
+													$SlideEasing: $Jease$.$OutQuint,
+
+													$SlideshowOptions: {
+														$Class: $JssorSlideshowRunner$,
+														$Transitions: GetSlideAnimation("3", "1000"),
+														$TransitionsOrder: 1
+													},
+
+													$ArrowNavigatorOptions: {
+														$Class: $JssorArrowNavigator$
+													},
+													$BulletNavigatorOptions: {
+														$Class: $JssorBulletNavigator$,
+														$ActionMode: "1"
+													}
+												};
+												//初始化幻灯
+												var slide = new $JssorSlider$("slider_smv_con_5_55", jssor_1_options_con_5_55);
+												$('#smv_con_5_55').data('jssor_slide', slide);
+
+												//resize游览器的时候触发自动缩放幻灯秀
+												$(window).bind("resize", function(e) {
+													if (e.target == this) {
+														var $this = $('#slider_smv_con_5_55');
+														var ww = $(window).width();
+														var width = $this.parent().width();
+
+														if (ww > width) {
+															var left = parseInt((ww - width) * 10 / 2) / 10;
+															$this.css({
+																'left': -left
+															});
+														} else {
+															$this.css({
+																'left': 0
+															});
+														}
+														slide.$ScaleWidth(ww);
+													}
+												});
+
+												//幻灯栏目自动或手动切换时触发的事件
+												slide.$On($JssorSlider$.$EVT_PARK, function(slideIndex, fromIndex) {
+													var $slideWrapper = $("#slider_smv_con_5_55 .w-slide-inner:last");
+													var $fromSlide = $slideWrapper.find(".content-box:eq(" + fromIndex + ")");
+													var $curSlide = $slideWrapper.find(".content-box:eq(" + slideIndex + ")");
+													var $nextSlide = $slideWrapper.find(".content-box:eq(" + (slideIndex + 1) + ")");
+													$("#smv_con_5_55").attr("selectArea", $curSlide.attr("data-area"));
+													$fromSlide.find(".animated").smanimate("stop");
+													$curSlide.find(".animated").smanimate("stop");
+													$nextSlide.find(".animated").smanimate("stop");
+													$("#switch_con_5_55 .page").html(slideIndex + 1);
+													$curSlide.find(".animated").smanimate("replay");
+													return false;
+												});
+												//切换栏点击事件
+												$("#switch_con_5_55 .left").unbind("click").click(function() {
+													if (con_5_55_page == 1) {
+														con_5_55_page = 1;
+													} else {
+														con_5_55_page = con_5_55_page - 1;
+													}
+													$("#switch_con_5_55 .page").html(con_5_55_page);
+													slide.$Prev();
+													return false;
+												});
+												$("#switch_con_5_55 .right").unbind("click").click(function() {
+													if (con_5_55_page == 1) {
+														con_5_55_page = 1;
+													} else {
+														con_5_55_page = con_5_55_page + 1;
+													}
+													$("#switch_con_5_55 .page").html(con_5_55_page);
+													slide.$Next();
+													return false;
+												});
+											};
+
+
+											$(function() {
+												//获取幻灯显示动画类型
+												var $this = $('#slider_smv_con_5_55');
+												var dh = $(document).height();
+												var wh = $(window).height();
+												var ww = $(window).width();
+												var width = 1000;
+												//区分页头、页尾、内容区宽度
+												if ($this.parents(".header").length > 0) {
+													width = $this.parents(".header").width();
+												} else if ($this.parents(".footer").length > 0) {
+													width = $this.parents(".footer").width();
+												} else {
+													width = $this.parents(".smvContainer").width();
+												}
+
+												if (ww > width) {
+													var left = parseInt((ww - width) * 10 / 2) / 10;
+													$this.css({
+														'left': -left,
+														'width': ww
+													});
+												} else {
+													$this.css({
+														'left': 0,
+														'width': ww
+													});
+												}
+
+												//解决手机端预览PC端幻灯秀时不通栏问题
+												if (VisitFromMobile()) {
+													$this.css("min-width", width);
+													setTimeout(function() {
+														var boxleft = (width - 330) / 2;
+														$this.find(".w-slide-btn-box").css("left", boxleft + "px");
+													}, 300);
+												}
+												$this.children().not(".slideArrow").css({
+													"width": $this.width()
+												});
+
+												con_5_55_sliderset3_init();
+
+												var areaId = $("#smv_con_5_55").attr("tareaid");
+												if (areaId == "") {
+													var mainWidth = $("#smv_Main").width();
+													$("#smv_con_5_55 .slideset_AreaC").css({
+														"width": mainWidth + "px",
+														"position": "relative",
+														"margin": "0 auto"
+													});
+												} else {
+													var controlWidth = $("#smv_con_5_55").width();
+													$("#smv_con_5_55 .slideset_AreaC").css({
+														"width": controlWidth + "px",
+														"position": "relative",
+														"margin": "0 auto"
+													});
+												}
+												$("#smv_con_5_55").attr("selectArea", "Area0");
+
+												var arrowHeight = $('#slider_smv_con_5_55 .w-slide-arrowl').eq(-1).outerHeight();
+												var arrowTop = (18 - arrowHeight) / 2;
+												$('#slider_smv_con_5_55 .w-slide-arrowl').eq(-1).css('top', arrowTop);
+												$('#slider_smv_con_5_55 .w-slide-arrowr').eq(-1).css('top', arrowTop);
+											});
+										</script>
+									</div>
+								</div>
+							
+							<!-- 产品内容 -->
+							    <div>
+					
+									
+									<div id="smv_con_3_34" ctype="category" class="esmartMargin smartAbs " cpid="98475" cstyle="Style2" ccolor="Item0"
+									 areaid="" iscontainer="False" pvid="" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="left: 0px; top: 404px;z-index:4;">
+									    
+										<div style="float: left;border: 1px solid rgba(255,255,255,0);width: 20%;padding: 3%; " class="vc_col-sm-3 wpb_column column_container vc_column_container col padding-3-percent"
+									     data-border-radius="none" data-shadow="none" data-border-animation="true" data-border-animation-delay="150"
+									     data-border-width="1px" data-border-style="double_offset" data-border-color="#e7e7e7" data-bg-cover=""
+									     data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+									     data-hover-bg-opacity="1" data-animation="" data-delay="0">
+											<span class="border-wrap animation completed" style="border-color: #e7e7e7;">
+									    		<span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
+									    	</span>
+									    	<div class="vc_column-inner">
+									    		<div class="wpb_wrapper">
+									    			<div class="toggles accordion" data-style="minimal_small">
+									    				<div class="toggle accent-color">
+									    					<h3><a href="#"><i class="icon-plus-sign"></i>产品类型1</a></h3>
+									    				</div>
+									    				<div class="toggle accent-color">
+									    					<h3><a href="javascript:void(0);" onclick="goTo('type2')"><i class="icon-plus-sign"></i>产品类型2</a></h3>
+									    				</div>
+									    				<div class="toggle accent-color">
+									    					<h3><a href="#"><i class="icon-plus-sign"></i>产品类型3</a></h3>
+									    				</div>
+									    			</div>
+									    		</div>
+									    	</div>
+									    </div>
+										<!-- 内容右边 -->
+										<!-- <div id="smv_con_4_13" ctype="listproduct" class="esmartMargin smartAbs " cpid="98475" cstyle="Style2" ccolor="Item0"
+										 areaid="" iscontainer="False" pvid="" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 1052px; width: 1200px; left: 0px; top: 515px;z-index:1000;"> -->
+											<div class="yibuFrameContent con_4_13  listproduct_Style2  " style="overflow:hidden;padding-left: 3.7%;">
+												<div class="w-list xn-resize">
+													<div>						
+													   <h4 style="color: #888;    border-bottom: 2px solid #888;">产品类型1</h4>						
+													</div>
+													<ul class="w-list-ul" id="ulList_con_4_13" data-title-autolines="1" data-desc-autolines="1">
+														<li class="w-list-item f-clearfix">
+															<a href="-1004.html" target="_self" class="w-list-link">
+																<div class="w-list-pic" >
+																	<img src="static/picture/-45447.jpg" class="w-listpic-in" >
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">大红袍</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1005.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45473.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">清香型铁观音</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1006.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45487.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">”云“字号西湖龙井茶</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1008.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45501.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">凤凰水仙</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1007.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45495.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">“梅”字号西湖龙井茶</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1009.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45500.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">凤凰单枞</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+													</ul>
+													
+												</div>
+												<div id="type2" class="w-list xn-resize">
+													<div>						
+													   <h4 style="color: #888;    border-bottom: 2px solid #888;">产品类型2</h4>						
+													</div>
+													<ul class="w-list-ul" id="ulList_con_4_13" data-title-autolines="1" data-desc-autolines="1">
+														<li class="w-list-item f-clearfix">
+															<a href="-1004.html" target="_self" class="w-list-link">
+																<div class="w-list-pic" >
+																	<img src="static/picture/-45447.jpg" class="w-listpic-in" >
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">大红袍</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1005.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45473.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">清香型铁观音</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1006.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45487.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">”云“字号西湖龙井茶</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1008.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45501.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">凤凰水仙</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1007.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45495.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">“梅”字号西湖龙井茶</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+														<li class="w-list-item f-clearfix">
+															<a href="-1009.html" target="_self" class="w-list-link">
+																<div class="w-list-pic">
+																	<img src="static/picture/-45500.jpg" class="w-listpic-in">
+																</div>
+																<div class="w-list-bottom">
+																	<h5 class="w-list-title">凤凰单枞</h5>
+																	<div class="w-list-desc w-hide"></div>
+																	<div class="w-list-price w-hide">¥&nbsp;0.00</div>
+																	<p class="w-list-btn w-hide">立即购买</p>
+																</div>
+															</a>
+														</li>
+													</ul>
+													
+												</div>
+											</div>
+										<!-- </div> -->
+										
+												<script>
+													function goTo(value) {
+														console.log(111);
+														document.querySelector("#"+value).scrollIntoView();
+													}
+													var callback_con_4_13 = function() {
+														var sv = $("#smv_con_4_13");
+														var titlelines = parseInt(sv.find(".w-list-ul").attr("data-title-autolines"));
+														var desclines = parseInt(sv.find(".w-list-ul").attr("data-desc-autolines"));
+										
+														var titleItem = sv.find(".w-list-title");
+														var title_line_height = titleItem.css("line-height");
+														titleItem.css("height", parseInt(title_line_height) * titlelines);
+										
+														var desc_line_height = sv.find(".w-list-desc").css("line-height");
+														sv.find(".w-list-desc").css("height", parseInt(desc_line_height) * desclines);
+										
+														sv.find("img").cutFill();
+													}
+													callback_con_4_13();
+												</script>
+										<!-- END -->
+									 </div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+
+		<script type="text/javascript">
+			$(function() {
+				$("img.lazyload").lazyload({
+					skip_invisible: false,
+					effect: "fadeIn",
+					failure_limit: 15,
+					threshold: 100
+				});
+				$('.animated').smanimate();
+				$('.smartRecpt').smrecompute();
+				setCurrentPageTitle('产品中心', 2);
+				xwezhan.initWz();
+
+				if ($("#txtDeviceSwitchEnabled").val() == "hide") {
+					$(".m-deviceSwitch").css("display", "none");
+				}
+
+				// 隐藏备案信息展示
+				$('div[ctype=companyinfo]').find('.company-info-title').each(function(i, it) {
+					if ($(it).text().indexOf('备案') > -1 || $(it).next().text().toLowerCase().indexOf('icp') > -1) {
+						$(it).parent().parent().css('display', 'none');
+					}
+				})
+				var info = {
+					icp: "",
+					ga: '',
+					copyright: '' != "" ? '版权所有 ' + '' : "",
+					color: '#989898',
+					background: '#ffffff',
+					powerby: 'Powered by ' + 'CloudDream',
+					ipv6: 'True' == 'True',
+					ali: "True" == "True",
+					style: 'style1',
+					align: 'center',
+					fontsize: 12
+				};
+
+				_initData()
+				_initShow()
+
+				function _initData() {
+					var linkUrl = "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode="
+					if (info.ga != "") {
+						linkUrl = linkUrl + info.ga.substring(5, 19);
+					}
+					$('.ga_link').attr('href', linkUrl);
+					$('.bottom-content').css({
+						'text-align': info.align
+					})
+					$('.icp-area .icp-words').text(info.icp)
+					$('.ga-area .ga-words').text(info.ga)
+					$('.copyright-area').text(info.copyright)
+					$('.powerby-area').find('span').text(info.powerby)
+					$('.page-bottom--area').css({
+						background: info.background
+					})
+					$('.bottom-words').css({
+						color: info.color
+					})
+					$('.bottom-border').css({
+						background: info.color
+					})
+					$('.ipv6-box').css({
+						'border-color': info.color
+					})
+					$('.ali-area').find('svg g').css({
+						'fill': info.color,
+						height: info.fontsize,
+						width: parseInt(info.fontsize * 55 / 13 + 'px')
+					})
+					$('.ga-area').find('img').css({
+						width: info.fontszie + 'px'
+					})
+
+					$('.ipv-area').css({
+						'line-height': info.fontsize + 'px'
+					})
+					$('.ali-area').find('svg g').css({
+						'fill': info.color
+					})
+					$('.divider').css({
+						height: info.fontsize + 'px'
+					})
+					$('.ali-area').find('svg').css({
+						height: info.fontsize,
+						width: parseInt(info.fontsize * 55 / 13 + 'px')
+					})
+					$('.ga-area').find('img').css({
+						width: info.fontsize + 'px',
+						height: info.fontsize + 'px'
+					})
+					$('.page-bottom--area').find('.common-style').css({
+						fontSize: info.fontsize + 'px'
+					})
+				}
+
+				function _initShow() {
+					if ("True" == "False") {
+						$('.top-area').css('display', 'none');
+					}
+					if (info.style === 'style1') {
+						$('#b_style1').css('display', 'block');
+						if (!info.ga) {
+							$('.ga-area').hide()
+							$('.ga-area')
+								.prev('.divider')
+								.hide()
+						}
+						if (!info.icp) {
+							$('.icp-area').hide()
+							$('.icp-area')
+								.next('.divider')
+								.hide()
+						}
+					}
+					if (info.style === 'style2') {
+						$('#b_style2').css('display', 'block');
+						if (!info.ga) {
+							$('.ga-area').hide()
+							$('.ga-area')
+								.next('.divider')
+								.hide()
+						}
+						if (!info.icp) {
+							$('.icp-area').hide()
+							$('.icp-area')
+								.prev('.divider')
+								.hide()
+						}
+					}
+					if (info.style === 'style3') {
+						$('#b_style3').css('display', 'block');
+						if (!info.ga) {
+							$('.ga-area').hide()
+							$('.ga-area')
+								.next('.divider')
+								.hide()
+						}
+						if (!info.copyright) {
+							$('.copyright-area').hide()
+							$('.copyright-area')
+								.prev('.divider')
+								.hide()
+						}
+						if (!info.icp) {
+							$('.icp-area').hide()
+							$('.icp-area')
+								.prev('.divider')
+								.hide()
+							$('.copyright-area').hide()
+							$('.copyright-area')
+								.prev('.divider')
+								.hide()
+						}
+						if (!info.ga && !info.copyright) {
+							$('.copyright-area').hide()
+							$('.copyright-area')
+								.next('.divider')
+								.hide()
+						}
+					}
+					if (info.style === 'style4') {
+						$('#b_style4').css('display', 'block');
+						if (!info.icp) {
+							$('.icp-area').hide()
+							$('.icp-area')
+								.prev('.divider')
+								.hide()
+							$('.copyright-area').hide()
+							$('.copyright-area')
+								.next('.divider')
+								.hide()
+						}
+						if (!info.copyright) {
+							$('.copyright-area').hide()
+							$('.copyright-area')
+								.next('.divider')
+								.hide()
+						}
+						if (!info.ga) {
+							$('.ga-area').hide()
+							$('.ga-area')
+								.prev('.divider')
+								.hide()
+						}
+						if (!info.icp && !info.copyright) {
+							$('.icp-area').hide()
+							$('.icp-area')
+								.next('.divider')
+								.hide()
+						}
+					}
+					if ("True".toLowerCase() == "false") {
+						$('.ali-area').hide()
+						$('.ali-area')
+							.next('.divider')
+							.hide()
+					}
+					if ("True".toLowerCase() == "false") {
+						$('.ipv-area').hide()
+						$('.ipv-area')
+							.prev('.divider')
+							.hide()
+					}
+					if ("True".toLowerCase() == "false") {
+						$('.powerby-area').hide()
+						$('.powerby-area')
+							.prev('.divider')
+							.hide()
+					}
+					if ("True".toLowerCase() == "false" && "True".toLowerCase() == "false") {
+						$('.ipv-area').hide()
+						$('.ipv-area')
+							.next('.divider')
+							.hide()
+					}
+					if ((!info.ga && !info.icp) || ("True".toLowerCase() == "false" && "True".toLowerCase() == "false" && "True".toLowerCase() ==
+							"false")) {
+						$('.top-area').css({
+							'margin-bottom': 0
+						})
+					}
+					if (!info.ga && !info.icp && "True".toLowerCase() == "false" && "True".toLowerCase() == "false" && "True".toLowerCase() ==
+						"false") {
+						$('#all-icp-bottom').css({
+							'display': 'none'
+						});
+					}
+				}
+			});
+		</script>
+		<div id="systemDialogLayer" style="position:relative;z-index:999999"></div>
+	</body>
+</html>
