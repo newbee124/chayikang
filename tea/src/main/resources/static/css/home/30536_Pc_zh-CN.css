@@ -204,7 +204,7 @@
 
 .tem_72_45 .w-nav .w-nav-item .w-nav-item-link .w-link-txt {
     font-family: Tahoma;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tem_72_45 .w-nav .w-nav-item .w-nav-item-link .mw-iconfont {
@@ -267,15 +267,7 @@
 
 /* hover */
 .tem_72_45 .w-nav .w-nav-inner:hover {
-    background-color: transparent;
-    background-image: url(../../img/home/-45411.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background: -webkit-linear-gradient(none, none);
-    background: -moz-linear-gradient(none, none);
-    background: -ms-linear-gradient(none, none);
-    background: linear-gradient(none, none);
-    background-size: auto;
+    border-bottom: solid 3px #ffffff;
 }
 
 .tem_72_45 .w-nav .w-nav-inner:hover .w-nav-item-link {
@@ -349,7 +341,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 850px;
+    height: 550px;
     position: relative;
     top: 0px;
     left: 0px;
@@ -365,7 +357,7 @@
     position: relative;
     top: 0px;
     left: 0px;
-    height: 850px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -378,7 +370,7 @@
 
 .tem_73_3 .w-slide-inner .content-box > .content-box-inner {
     width: 100% !important;
-    height: 850px !important;
+    height: 550px !important;
     position: absolute;
     z-index: 0 !important;
     top: 0;
@@ -387,7 +379,7 @@
 }
 
 .tem_73_3 .w-slide-inner .content-box > .smAreaC {
-    height: 850px;
+    height: 550px;
 }
 
 .tem_73_3 .w-slide-btn-box {
