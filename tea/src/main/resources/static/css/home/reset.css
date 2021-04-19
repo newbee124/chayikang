@@ -257,7 +257,22 @@ template {display: none;}
 .context-menu-item{position:relative}
 .control-add-flag{cursor:crosshair!important}
 .yibuFrameContent{height:100%}
-.smartAbs{position:absolute}
+.smartAbs{
+    position:absolute;
+    background-color: transparent;
+   /* background-image: url(../../img/home/-45494.png);*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(top, none, none);
+    background: -o-linear-gradient(top, none, none);
+    background: linear-gradient(top, none, none);
+    background: -webkit-gradient(linear, left top, left bottom, from(none), to(none));
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
 .smartFixed{position:fixed!important}
 .smart-deleted,.smart-none{display:none;}
 .sm-context-menu{background-color:#fff;box-shadow:0 0 15px rgba(0,0,0,.15),0 0 1px 1px rgba(0,0,0,.1);content:'';position:absolute;line-height:1.2;padding-top:0;padding-bottom:0;cursor:default;margin:0;font-size:15px;overflow:visible;border-radius:3px}
