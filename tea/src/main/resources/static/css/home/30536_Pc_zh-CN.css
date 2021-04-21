@@ -268,7 +268,7 @@
 /* hover */
 .tem_72_45 .w-nav .w-nav-inner:hover {
     background-color: transparent;
-    background-image: url(../../img/home/-45411.png);
+    background-image: url(../img/home/-45411.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background: -webkit-linear-gradient(none, none);
@@ -308,7 +308,7 @@
 /* current */
 .tem_72_45 .w-nav .w-nav-item.current {
     background-color: transparent;
-    background-image: url(../../img/home/-45411.png);
+    background-image: url(../img/home/-45411.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background: -webkit-linear-gradient(none, none);

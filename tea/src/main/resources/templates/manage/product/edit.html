@@ -111,6 +111,7 @@
 
         function submitHandler() {
             if ($.validate.form()) {
+                console.log($('#form-product-edit').serialize());
                 $.operate.save(prefix + "/edit", $('#form-product-edit').serialize());
             }
         }

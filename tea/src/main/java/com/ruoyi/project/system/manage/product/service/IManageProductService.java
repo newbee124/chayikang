@@ -1,6 +1,8 @@
 package com.ruoyi.project.system.manage.product.service;
 
 import java.util.List;
+import java.util.Map;
+
 import com.ruoyi.project.system.manage.product.domain.ManageProduct;
 
 /**
@@ -18,6 +20,9 @@ public interface IManageProductService
      * @return 11
      */
     public ManageProduct selectManageProductById(Long id);
+
+
+    public List<Map<String,Object>> selectProductList();
 
     /**
      * 查询11列表
