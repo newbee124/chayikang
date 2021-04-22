@@ -2733,15 +2733,15 @@
 }
 
 .con_551_54 .fullcolumn-outer {
-    background-color: transparent;
-    background-image: url(../../img/home/-45494.png);
+    background-color: rgb(248, 250, 251);
+    background-image: none;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background: -moz-linear-gradient(top, none, none);
     background: -o-linear-gradient(top, none, none);
     background: linear-gradient(top, none, none);
     background: -webkit-gradient(linear, left top, left bottom, from(none), to(none));
-    background-size: 100% 100%;
+    background-size: auto;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -3472,15 +3472,15 @@
 }
 
 .con_322_23 .fullcolumn-outer {
-    background-color: transparent;
-    background-image: url(../../img/home/-45494.png);
+    background-color: rgb(248, 250, 251);
+    background-image: none;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background: -moz-linear-gradient(top, none, none);
     background: -o-linear-gradient(top, none, none);
     background: linear-gradient(top, none, none);
     background: -webkit-gradient(linear, left top, left bottom, from(none), to(none));
-    background-size: 100% 100%;
+    background-size: auto;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -4254,7 +4254,10 @@
     background-size: cover;
 }
 #content-box-inner{
-
+    background-image: url(../../img/home/-45418.jpg);
+    background-position:0 50%;
+    background-repeat:cover;
+    background-size:cover;
     opacity:1
  }
 
