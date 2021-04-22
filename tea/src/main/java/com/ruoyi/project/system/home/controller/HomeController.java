@@ -21,7 +21,7 @@ public class HomeController extends BaseController {
 
     @GetMapping("/home")
     public String home(HttpServletRequest request, HttpServletResponse response) {
-        return "home";
+        return "home/index";
     }
 
     @GetMapping("/home/cpzx")
