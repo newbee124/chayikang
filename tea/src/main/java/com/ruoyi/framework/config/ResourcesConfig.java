@@ -3,6 +3,7 @@ package com.ruoyi.framework.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -33,7 +34,9 @@ public class ResourcesConfig implements WebMvcConfigurer
     @Override
     public void addViewControllers(ViewControllerRegistry registry)
     {
-        registry.addViewController("/").setViewName("forward:" + indexUrl);
+        System.out.print(indexUrl);
+        registry.addViewController("/").setViewName("redirect:" + indexUrl);
+        registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 
     @Override
