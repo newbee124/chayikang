@@ -899,7 +899,7 @@ body a { color: #2cce6c; }
 
 
 		
-	body i, body em, .masonry.meta_overlaid article.post .post-header .meta-author > span, .post-area.masonry.meta_overlaid article.post .post-meta .date,
+	 .masonry.meta_overlaid article.post .post-header .meta-author > span, .post-area.masonry.meta_overlaid article.post .post-meta .date,
 	.post-area.masonry.meta_overlaid article.post.quote .quote-inner .author, .post-area.masonry.meta_overlaid  article.post.link .post-content .destination,
 	body .testimonial_slider[data-style="minimal"] blockquote span.title
 	{	
