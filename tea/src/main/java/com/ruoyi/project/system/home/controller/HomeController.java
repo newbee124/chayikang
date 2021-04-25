@@ -22,7 +22,7 @@ public class HomeController extends BaseController {
 
     @GetMapping("/home")
     public String home(HttpServletRequest request, HttpServletResponse response) {
-        return "home";
+        return "home/index";
     }
 
     @GetMapping("/home/cpzx")
@@ -30,6 +30,13 @@ public class HomeController extends BaseController {
         List<Map<String,Object>> productTypeList = manageProductService.selectProductList();
         mmap.put("productTypeList", productTypeList);
         return "home/cpzx";
+    }
+
+    @GetMapping("/home/ppjs")
+    public String ppjs(ModelMap mmap) {
+        List<Map<String,Object>> productTypeList = manageProductService.selectProductList();
+        mmap.put("productTypeList", productTypeList);
+        return "home/ppjs";
     }
 
     @GetMapping("/home/productDetail/{id}")
