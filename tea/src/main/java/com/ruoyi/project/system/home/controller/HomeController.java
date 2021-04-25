@@ -32,6 +32,13 @@ public class HomeController extends BaseController {
         return "home/cpzx";
     }
 
+    @GetMapping("/home/ppjs")
+    public String ppjs(ModelMap mmap) {
+        List<Map<String,Object>> productTypeList = manageProductService.selectProductList();
+        mmap.put("productTypeList", productTypeList);
+        return "home/ppjs";
+    }
+
     @GetMapping("/home/productDetail/{id}")
     public String productDetail(@PathVariable("id") Long id, ModelMap mmap) {
         ManageProduct manageProduct = manageProductService.selectManageProductById(id);
