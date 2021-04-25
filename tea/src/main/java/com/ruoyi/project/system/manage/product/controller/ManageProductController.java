@@ -1,6 +1,8 @@
 package com.ruoyi.project.system.manage.product.controller;
 
-import java.io.IOException;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import com.ruoyi.common.constant.FileTypeConstant;
@@ -19,6 +21,8 @@ import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.framework.web.page.TableDataInfo;
 import org.springframework.web.multipart.MultipartFile;
 import sun.misc.BASE64Encoder;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 11Controller
@@ -57,19 +61,43 @@ public class ManageProductController extends BaseController
 
     @PostMapping("/uploadImg")
     @ResponseBody
-    public AjaxResult uploadImg(@RequestParam MultipartFile picture)  throws IOException
+    public AjaxResult uploadImg(@RequestParam MultipartFile file)  throws IOException
     {
-        if (picture.isEmpty()) {
+        if (file.isEmpty()) {
             return AjaxResult.error("图片文件不能为空");
         }
-        String filename = picture.getOriginalFilename();
+        String filename = file.getOriginalFilename();
         String suffix = filename.substring(filename.lastIndexOf(".")+1);
         if (!FileTypeConstant.fileTypeMap.containsKey(suffix)) {
             return AjaxResult.error("文件格式错误");
         }
-        BASE64Encoder encoder = new BASE64Encoder();
-        String base64Img = encoder.encode(picture.getBytes());
-        return AjaxResult.success("上传成功","data:image/jpg;base64,"+base64Img);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        filename = "/img/productImg/"+sdf.format(new Date())+"."+suffix;
+        String path = this.getClass().getResource("/").getPath()+"static";
+        //String picPath = request.getSession().getServletContext().getRealPath("/");
+        String imgPath = path+filename;
+
+        File saveFile = new File(imgPath);
+        if(!saveFile.exists()) {
+            saveFile.getParentFile().mkdir();
+            saveFile.createNewFile();
+        }
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream(saveFile);
+            fileOutputStream.write(file.getBytes());
+        } catch (Exception e) {
+            logger.info("图片上传异常" , e);
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return AjaxResult.success("上传成功",filename);
     }
 
     /**

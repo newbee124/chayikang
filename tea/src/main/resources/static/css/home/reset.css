@@ -257,6 +257,9 @@ template {display: none;}
 .context-menu-item{position:relative}
 .control-add-flag{cursor:crosshair!important}
 .yibuFrameContent{height:100%}
+.smartAbs1{
+    position:absolute;
+}
 .smartAbs{
     position:absolute;
     background-color: transparent;
