@@ -1,6 +1,7 @@
 package com.ruoyi.project.system.home.controller;
 
 import com.ruoyi.framework.web.controller.BaseController;
+import com.ruoyi.project.system.manage.product.domain.ManageProduct;
 import com.ruoyi.project.system.manage.product.service.IManageProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,7 +34,8 @@ public class HomeController extends BaseController {
 
     @GetMapping("/home/productDetail/{id}")
     public String productDetail(@PathVariable("id") Long id, ModelMap mmap) {
-
+        ManageProduct manageProduct = manageProductService.selectManageProductById(id);
+        mmap.put("manageProduct", manageProduct);
         return "home/productDetail";
     }
 }

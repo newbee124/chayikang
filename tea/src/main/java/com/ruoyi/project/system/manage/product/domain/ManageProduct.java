@@ -35,8 +35,19 @@ public class ManageProduct extends BaseEntity
     private String details;
 
     /** 产品图片 */
-    @Excel(name = "产品图片")
+    @Excel(name = "产品详情图片")
     private String picture;
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    @Excel(name = "产品封面图片")
+    private String cover;
 
     /** 上下架状态，0上架 1下架 */
     @Excel(name = "上下架状态，0上架 1下架")
@@ -140,6 +151,7 @@ public class ManageProduct extends BaseEntity
             .append("link", getLink())
             .append("details", getDetails())
             .append("picture", getPicture())
+            .append("cover", getCover())
             .append("status", getStatus())
             .append("createBy", getCreateBy())
             .append("createTime", getCreateTime())
