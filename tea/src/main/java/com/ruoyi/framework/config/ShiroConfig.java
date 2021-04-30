@@ -258,6 +258,8 @@ public class ShiroConfig
         filterChainDefinitionMap.put("/logout", "logout");
         // 不需要拦截的访问
         filterChainDefinitionMap.put("/home/**", "anon");
+        //不拦截默认ip+端口的访问
+        filterChainDefinitionMap.put("/", "anon");
         filterChainDefinitionMap.put("/profile/**", "anon");
         filterChainDefinitionMap.put("/login", "anon,captchaValidate");
         // 注册相关
