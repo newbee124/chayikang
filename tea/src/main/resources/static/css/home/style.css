@@ -7605,7 +7605,7 @@ body .blog-recent[data-style*="classic_enhanced"] .meta-category a{z-index:301}
 .blog-recent[data-style*="classic_enhanced_alt"] .post-featured-img img,
 .post-area.masonry.classic_enhanced article.post.wide_tall .nectar-flickity .cell img,
 .post-area.masonry.classic_enhanced article.post.large_featured .nectar-flickity .cell img{display:none}
-.masonry.classic_enhanced .masonry-blog-item .article-content-wrap, .blog-recent[data-style*="classic_enhanced"] .article-content-wrap{ padding:17%!important;  position:relative;  z-index:100;  background-color:#fff}
+.masonry.classic_enhanced .masonry-blog-item .article-content-wrap, .blog-recent[data-style*="classic_enhanced"] .article-content-wrap{ padding:5%!important;  position:relative;  z-index:100;  background-color:#fff}
 .masonry.classic_enhanced .masonry-blog-item h3.title, .blog-recent[data-style*="classic_enhanced"] h3.title{margin-bottom:0}
 
 .span_12.light .masonry.classic_enhanced .masonry-blog-item h3.title, .span_12.light .blog-recent[data-style="classic_enhanced"] h3.title{color:#444}
@@ -9529,7 +9529,7 @@ body .pricing-table[data-style="flat-alternative"].five-cols .pricing-column.hig
 /*-------------------------------------------------------------------------*/
 #footer-outer, #nectar_fullscreen_rows >#footer-outer.wpb_row .full-page-inner-wrap{color:#ccc; position:relative; z-index:10; background-color:#252525}
 
-#footer-outer .row{padding:55px 0px; margin-bottom:0px}
+#footer-outer .row{padding:5px 0px; margin-bottom:0px}
 
 #footer-outer .widget h4, .text-on-hover-wrap .categories a{color:#777; font-size:12px; font-family:'Open Sans'; font-weight:700;  letter-spacing:2px;  text-transform:uppercase; margin-bottom:20px}
 

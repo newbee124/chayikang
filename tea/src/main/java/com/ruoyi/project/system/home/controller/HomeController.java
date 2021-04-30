@@ -1,6 +1,8 @@
 package com.ruoyi.project.system.home.controller;
 
 import com.ruoyi.framework.web.controller.BaseController;
+import com.ruoyi.project.system.index.domain.ManageIndex;
+import com.ruoyi.project.system.index.service.IManageIndexService;
 import com.ruoyi.project.system.manage.product.domain.ManageProduct;
 import com.ruoyi.project.system.manage.product.service.IManageProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +21,18 @@ public class HomeController extends BaseController {
 
     @Autowired
     private IManageProductService manageProductService;
+    @Autowired
+    private IManageIndexService manageIndexService;
 
     @GetMapping("/home")
-    public String home(HttpServletRequest request, HttpServletResponse response) {
+    public String home(ModelMap model) {
+        ManageIndex index = new ManageIndex();
+        index.setType("1");
+        List<ManageIndex> list = manageIndexService.selectManageIndexList(index);
+        model.put("indexDataList1", list);
+        index.setType("2");
+        list = manageIndexService.selectManageIndexList(index);
+        model.put("indexDataList2", list);
         return "home/index";
     }
 
@@ -33,9 +44,14 @@ public class HomeController extends BaseController {
     }
 
     @GetMapping("/home/ppjs")
-    public String ppjs(ModelMap mmap) {
-        List<Map<String,Object>> productTypeList = manageProductService.selectProductList();
-        mmap.put("productTypeList", productTypeList);
+    public String ppjs(ModelMap model) {
+        ManageIndex index = new ManageIndex();
+        index.setType("3");
+        List<ManageIndex> list = manageIndexService.selectManageIndexList(index);
+        model.put("indexDataList1", list);
+        index.setType("4");
+        list = manageIndexService.selectManageIndexList(index);
+        model.put("indexDataList2", list);
         return "home/ppjs";
     }
 
