@@ -23,6 +23,19 @@
 		<link href="/css/home/antChain.css" rel="stylesheet" type="text/css">
 
 
+		<!-- baique -->
+		<link rel='stylesheet' id='contact-form-7-css' href='/css/home/styles.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='rgs-css' href='/css/home/rgs.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='font-awesome-css' href='/css/home/font-awesome.min.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='main-styles-css' href='/css/home/style.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='fancyBox-css' href='/css/home/jquery.fancybox.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='responsive-css' href='/css/home/responsive.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='nectarslider-css' href='/css/home/nectar-slider.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='nectar-portfolio-css' href='/css/home/portfolio.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='select2-css' href='/css/home/select2.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='dynamic-css-css' href='/css/home/dynamic-combined.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='skin-material-css' href='/css/home/skin-material.css' type='text/css' media='all'>
+		<link rel='stylesheet' id='js_composer_front-css' href='/css/home/js_composer.min.css' type='text/css' media='all'>
 
 		<link href="/css/home/1133605_Pc_zh-CN.css" rel="stylesheet">
 		<script src="/js/home/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -91,61 +104,6 @@
 
 		<link href="/css/home/view.css" rel="stylesheet" type="text/css">
 
-		<script type="text/javascript">
-			/* function initialDeviceSwitch() {
-				var pageinfo = $("#pageinfo");
-				var l = window.location;
-				if (pageinfo.length == 0 && window.frames.length > 0) {
-					pageinfo = $(window.frames[0].document).find("#pageinfo");
-					l = window.frames[0].document.location;
-				}
-				$(".m-deviceSwitch").show();
-				if (pageinfo.length == 0) {
-					$(".m-deviceSwitch").hide();
-					return;
-				}
-				$("#secUrl").attr("data-host", l.host).attr("data-pathname", l.pathname).attr("data-search", l.search).attr(
-					"data-hash", l.hash);
-				var pagedevice = pageinfo.attr("data-device");
-				$(".m-deviceSwitch").find("li[data-device=" + pagedevice + "]").addClass("active").find("a").addClass("z-current");
-				$(".m-deviceSwitch").find("li").not(".active").click(function() {
-					var secUrl = $("#secUrl");
-					var pathname = secUrl.attr("data-pathname");
-					var search = secUrl.attr("data-search");
-					var hash = secUrl.attr("data-hash");
-					var npagedevice = $(this).attr("data-device");
-					var mobileUrl = "";
-					if (npagedevice == "Pc") {
-						mobileUrl = mobileUrl + pathname + search.replace("deviceModel=mobile", "deviceModel=pc") + hash;
-					} else if (npagedevice == "Mobile") {
-						var toUrl = pathname + search.replace("deviceModel=pc", "deviceModel=mobile") + hash;
-						mobileUrl = mobileUrl + "/Runtime/MobileContainer?url=" + encodeURIComponent(toUrl);
-					}
-					$.ajax({
-						cache: false,
-						url: "/Common/ChangeRunTimeDeviceMode",
-						type: "post",
-						data: {
-							type: npagedevice
-						},
-						dataType: "json",
-						success: function(result) {
-							if (result.IsSuccess) {
-								window.top.location.href = mobileUrl;
-							}
-						},
-						error: function() {}
-					});
-				});
-			}
-			$(function() {
-				if ($("#prevMainFrame").length > 0) {
-					$("#prevMainFrame").load(initialDeviceSwitch);
-				} else {
-					initialDeviceSwitch();
-				}
-			}); */
-		</script>
 		<div id="mainContentWrapper" style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
      position: relative; width: 100%;min-width:1200px;background-size: auto;"
 		 bgscroll="none">
@@ -184,7 +142,7 @@
 												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
 													<div class="w-nav-item">
 														<i class="w-nav-item-line"></i>
-														<a href="sy.html" target="_self" class="w-nav-item-link">
+														<a href="/home" target="_self" class="w-nav-item-link">
 															<span class="mw-iconfont"></span>
 															<span class="w-link-txt">首页</span>
 														</a>
@@ -194,7 +152,7 @@
 												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
 													<div class="w-nav-item">
 														<i class="w-nav-item-line"></i>
-														<a href="ppjs.html" target="_self" class="w-nav-item-link">
+														<a href="/home/ppjs" target="_self" class="w-nav-item-link">
 															<span class="mw-iconfont"></span>
 															<span class="w-link-txt">品牌介绍</span>
 														</a>
@@ -204,7 +162,7 @@
 												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
 													<div class="w-nav-item">
 														<i class="w-nav-item-line"></i>
-														<a href="cpzx11.html" target="_self" class="w-nav-item-link">
+														<a href="/home/cpzx" target="_self" class="w-nav-item-link">
 															<span class="mw-iconfont"></span>
 															<span class="w-link-txt">产品中心</span>
 														</a>
@@ -214,9 +172,9 @@
 												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
 													<div class="w-nav-item">
 														<i class="w-nav-item-line"></i>
-														<a href="xwhd.html" target="_self" class="w-nav-item-link">
+														<a href="/home/stores" target="_self" class="w-nav-item-link">
 															<span class="mw-iconfont"></span>
-															<span class="w-link-txt">新闻活动</span>
+															<span class="w-link-txt">全球门店</span>
 														</a>
 
 													</div>
@@ -224,9 +182,9 @@
 												<li class="w-nav-inner" style="height:65px;line-height:65px;width:20%;">
 													<div class="w-nav-item">
 														<i class="w-nav-item-line"></i>
-														<a href="zshz.html" target="_self" class="w-nav-item-link">
+														<a href="/home/fans" target="_self" class="w-nav-item-link">
 															<span class="mw-iconfont"></span>
-															<span class="w-link-txt">招商合作</span>
+															<span class="w-link-txt">粉丝社区</span>
 														</a>
 
 													</div>
@@ -400,7 +358,7 @@
 								 style="min-height: 34px; width: 960px; left: 120px; top: 1520px;z-index:4;">
 									<div class="yibuFrameContent tem_3_50  productTitleBind_Style1  " style="font-size: 18px;overflow:visible;text-align: center;">
 										<!-- <img src="/image/shopcar.png"> -->
-										<a href="javascript:void(0);" th:onclick="buy([[${manageProduct.link}]])" ><img style="width: 20px;height: 20px;padding-bottom: 3px;" src="/img/home/shopcar.png">去购买</a>
+										<a href="javascript:void(0);" th:onclick="buy([[${manageProduct.link}]])" ><img style="width: 20px;height: 20px;padding-top: 4px;" src="/img/home/shopcar.png">去购买</a>
 									</div>
 								</div>
 								<div id="smv_tem_3_50" ctype="productTitleBind" class="smartRecpt esmartMargin smartAbs1 " cpid="1133605" cstyle="Style1"
@@ -425,10 +383,10 @@
 															<div class="yibuFrameContent tem_33_6  text_Style1  " style="overflow:hidden;;">
 																<div id='txt_tem_33_6' style="height: 100%;">
 																	<div class="editableContent" id="txtc_tem_33_6" style="height: 100%; word-wrap:break-word;">
-																		<p style="text-align:center"><span style="line-height:1.75"><span style="color:#ffffff; font-family:Source Han Sans, Geneva, sans-serif"><span
+																		<p style="text-align:center;padding-bottom: 0px;"><span style="line-height:1.75"><span style="color:#ffffff; font-family:Source Han Sans, Geneva, sans-serif"><span
 																					 style="font-size:32px">产品中心</span></span></span></p>
 
-																		<p style="text-align:center"><span style="letter-spacing:7px"><span style="line-height:1.75"><span
+																		<p style="text-align:center;padding-bottom: 0px;"><span style="letter-spacing:7px"><span style="line-height:1.75"><span
 																					 style="color:#dddddd"><span style="font-size:14px"><span style="font-family:&quot;Source Han Sans&quot;,Geneva,sans-serif">PRODUCT
 																								CENTER</span></span></span></span></span></p>
 
@@ -643,177 +601,53 @@
 					</div>
 				</div>
 			</div>
-			<div style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
-         position: relative; width: 100%;min-width:1200px;background-size: auto;"
-			 bgscroll="none">
-				<div class=" footer" cpid="98663" id="smv_Area3" style="width: 1200px; height: 147px; position: relative; margin: 0 auto;">
-					<div id="smv_tem_113_19" ctype="banner" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style1" ccolor="Item0"
-					 areaid="Area3" iscontainer="True" pvid="" tareaid="Area3" re-direction="y" daxis="Y" isdeletable="True" style="height: 147px; width: 100%; left: 0px; top: 0px;z-index:2;">
-						<div class="yibuFrameContent tem_113_19  banner_Style1  " style="overflow:visible;;">
-							<div class="fullcolumn-inner smAreaC" id="smc_Area0" cid="tem_113_19" style="width:1200px">
-								<div id="smv_tem_118_19" ctype="tab" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style6" ccolor="Item0"
-								 areaid="Area0" iscontainer="True" pvid="tem_113_19" tareaid="Area3" re-direction="all" daxis="All" isdeletable="True"
-								 style="height: 170px; width: 186px; left: 1010px; top: 31px;z-index:14;">
-									<div class="yibuFrameContent tem_118_19  tab_Style6  " style="overflow:visible;;">
-										<div class="w-label" id="tab_tem_118_19">
-											<ul class="w-label-tips">
-												<li class="w-label-tips-line"><span></span></li>
-												<li class="w-label-tips-item " style="" data-area="tabArea0">
-													<a class="f-ellipsis" href="" target="_blank" style="line-height: 30px">关注我们|查看更多资讯</a>
-													<span class="mask" style=""></span>
-												</li>
-												<li class="w-label-tips-line"><span></span></li>
-											</ul>
-											<ul class="w-label-content">
-
-												<li class="w-label-content-item " data-area="tabArea0">
-													<div class="smAreaC" id="smc_tabArea0" cid="tem_118_19" style="height: 138px;">
-														<div id="smv_tem_119_19" ctype="qrcode" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style1"
-														 ccolor="Item0" areaid="tabArea0" iscontainer="False" pvid="tem_118_19" tareaid="Area3" re-direction="all"
-														 daxis="All" isdeletable="True" style="height: 98px; width: 98px; left: 44px; top: -140px;z-index:2;">
-															<div class="yibuFrameContent tem_119_19  qrcode_Style1  " style="overflow:hidden;;">
-																<!--w-qrcode-->
-																<div class="w-qrcode">
-																	<img src="/img/home/RenderQRCode.jpg">
-																</div>
-																<!--/w-qrcode-->
-															</div>
-														</div>
+			<div style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);position: relative; top:0;width: 100%;min-width:1280px;background-size: auto;" bgscroll="none">
+				<div id="footer-outer" data-midnight="light" data-cols="1" data-disable-copyright="true" data-using-bg-img="false" data-bg-img-overlay="0.8" data-full-width="1" data-using-widget-area="true">
+					<div id="footer-widgets" data-cols="1">
+						<div class="container">
+							<div class="row">
+								<div class="col span_12">
+									<!-- Footer 控件区域1 -->
+									<div id="custom_html-2" class="widget_text widget widget_custom_html">
+										<div class="textwidget custom-html-widget">
+											<div style="width:70%; margin: 0px auto;">
+												<div class="row" style="text-align: center;padding: 25px 0;">
+													<div class="vc_col-sm-3" style="display: inline-block; float:none;">
+														<img data-shadow-direction="middle" height="80" width="80" th:src="@{/img/home/RenderQRCode.jpg}">
+														<p style="margin-top: -18px;">微信</p>
 													</div>
-												</li>
-											</ul>
-										</div>
-										<style>
-											#smv_tem_118_19 {height:auto !important;}
-</style>
-										<script type="text/javascript">
-											var target_tem_118_19;
-											$(function() {
-												var event = "mouseenter";
-
-												$("#tab_tem_118_19").on("mouseleave", function() {
-													$("#tab_tem_118_19 > .w-label-tips > .current").removeClass("current");
-													$("#tab_tem_118_19 > .w-label-content").stop().slideUp("fast");
-												});
-												$("#tab_tem_118_19 > .w-label-tips").on("mouseenter", function() {
-													$("#tab_tem_118_19 > .w-label-content").stop().slideDown("fast");
-												});
-
-												$("#tab_tem_118_19 > .w-label-tips >.w-label-tips-item").on(event, function() {
-													$(this).siblings().removeClass("current");
-													$(this).addClass("current");
-													$(this).prev(".w-label-tips-line").addClass("current");
-													$(this).next(".w-label-tips-line").addClass("current");
-													var $content = $("#tab_tem_118_19 >.w-label-content > .w-label-content-item[data-area='" + $(this).attr(
-														"data-area") + "']");
-													$content.addClass("current").siblings().removeClass("current");
-
-													$("#smv_tem_118_19").attr("selectArea", $content.attr("data-area"));
-													$content.find("img").cutFillAuto();
-												});
-												$("#smv_tem_118_19").attr("selectArea", "tabArea0");
-											});
-										</script>
-									</div>
-								</div>
-								<div id="smv_tem_117_19" ctype="logoimage" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style1" ccolor="Item0"
-								 areaid="Area0" iscontainer="False" pvid="tem_113_19" tareaid="Area3" re-direction="all" daxis="All"
-								 isdeletable="True" style="height: 44px; width: 88px; left: 558px; top: 31px;z-index:13;">
-									<div class="yibuFrameContent tem_117_19  logoimage_Style1  " style="overflow:visible;;">
-										<div class="w-image-box" data-filltype="0" id="div_tem_117_19">
-											<a target="_self" href="">
-												<img src="/img/home/-45412.png" alt="" title="" id="img_smv_tem_117_19" style="width: 88px; height:44px;">
-											</a>
-										</div>
-
-										<script type="text/javascript">
-											$(function() {
-												InitImageSmv("tem_117_19", "88", "44", "0");
-											});
-										</script>
-
-									</div>
-								</div>
-								<div id="smv_tem_116_19" ctype="text" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style1" ccolor="Item2"
-								 areaid="Area0" iscontainer="False" pvid="tem_113_19" tareaid="Area3" re-direction="all" daxis="All"
-								 isdeletable="True" style="height: 34px; width: 420px; left: 34px; top: 40px;z-index:8;">
-									<div class="yibuFrameContent tem_116_19  text_Style1  " style="overflow:hidden;;">
-										<div id='txt_tem_116_19' style="height: 100%;">
-											<div class="editableContent" id="txtc_tem_116_19" style="height: 100%; word-wrap:break-word;">
-												<p><span style="letter-spacing:15px"><span style="color:#bbbbbb"><span style="font-family:Source Han Sans"><span
-																 style="font-size:16px">品茶|发现自然之美</span></span></span></span></p>
+													<div class="vc_col-sm-3" style="display: inline-block; float:none;">
+														<img height="80" width="80" th:src="@{/img/home/RenderQRCode.jpg}">
+														<p style="margin-top: -18px;">网店</p>
+													</div>
+												</div>
 
 											</div>
-										</div>
 
-										<script>
-											var tables = $(' #smv_tem_116_19').find('table')
-											for (var i = 0; i < tables.length; i++) {
-												var tab = tables[i]
-												var borderWidth = $(tab).attr('border')
-												if (borderWidth <= 0 || !borderWidth) {
-													console.log(tab)
-													$(tab).addClass('hidden-border')
-													$(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
-													$(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
-													$(tab).children("thead").children("tr").children("td").addClass('hidden-border')
-													$(tab).children("thead").children("tr").children("th").addClass('hidden-border')
-													$(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
-													$(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
-												}
-											}
-										</script>
-									</div>
-								</div>
-								<div id="smv_tem_115_19" ctype="companyinfo" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style4" ccolor="Item0"
-								 areaid="Area0" iscontainer="False" pvid="tem_113_19" tareaid="Area3" re-direction="all" daxis="All"
-								 isdeletable="True" style="height: 30px; width: 320px; left: 440px; top: 110px;z-index:3;">
-									<div class="yibuFrameContent tem_115_19  companyinfo_Style4  " style="overflow:hidden;;">
-										<div class="w-company-info iconStyle1">
-											<span class="company-info-item">
-												<a href="javascript:void(0)">
-													<span class="icon company-info-icon    mw-icon-hide ">
-														<i class="ltd-icon gs-gongsi"></i>
-													</span>
-													<span class="company-info-title" style="white-space:pre">版权所有&#169;</span>
-													<span class="company-info-text">某某有限公司</span>
-												</a>
-											</span>
 										</div>
 									</div>
-								</div>
-								<div id="smv_tem_114_19" ctype="line" class="esmartMargin smartAbs1 " cpid="98663" cstyle="Style1" ccolor="Item0"
-								 areaid="Area0" iscontainer="False" pvid="tem_113_19" tareaid="Area3" re-direction="x" daxis="All" isdeletable="True"
-								 style="height: 20px; width: 1200px; left: 0px; top: 85px;z-index:2;">
-									<div class="yibuFrameContent tem_114_19  line_Style1  " style="overflow:visible;;">
-										<!-- w-line -->
-										<div style="position:relative; height:100%">
-											<div class="w-line" style="position:absolute;top:50%;" linetype="horizontal"></div>
+									<div id="text-2" class="widget widget_text">
+										<div class="textwidget">
+											<p style="text-align: center">
+												服务热线 8008851870 （工作日9:00-17:00）<br>
+												公司总机：021-62993388<br>
+												公司邮箱：51870@pechoin.com<br>
+												地址：上海市静安区昌平路710号3楼A区052室</p>
+											<p>
+											</p>
+										</div>
+									</div>
+									<div id="custom_html-3" class="widget_text widget widget_custom_html">
+										<div class="textwidget custom-html-widget">
+											<div style="width:70%; margin: 0px auto; text-align: center;">
+												<a href="/login" target="_blank" style="display: inline-block; margin: 0px 10px; font-size: 14px;"><i class="fa fa-user"></i> 员工入口</a>
+											</div>
+											<a href="javascript:;" style="color: #888; font-size: 13px; text-align: center;text-decoration:none ; display: block">上海百雀羚日用化学有限公司 版权所有沪ICP备09048148号-1 <script> document.write(new Date().getFullYear());</script> pechoin, Inc.</a>
+											<a href="javascript:;" style="color: #888; font-size: 13px; text-align: center;text-decoration:none ; display: block">沪公网安备 31010702004843号</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div id="bannerWrap_tem_113_19" class="fullcolumn-outer" style="position: absolute; top: 0; bottom: 0;">
-							</div>
-
-							<script type="text/javascript">
-								$(function() {
-									var resize = function() {
-										$("#smv_tem_113_19 >.yibuFrameContent>.fullcolumn-inner").width($("#smv_tem_113_19").parent().width());
-										$('#bannerWrap_tem_113_19').fullScreen(function(t) {
-											if (VisitFromMobile()) {
-												t.css("min-width", t.parent().width())
-											}
-										});
-									}
-									$(window).resize(function(e) {
-										if (e.target == this) {
-											resize();
-										}
-									});
-									resize();
-								});
-							</script>
 						</div>
 					</div>
 				</div>
