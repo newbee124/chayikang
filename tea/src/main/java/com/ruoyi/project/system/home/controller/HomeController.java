@@ -52,4 +52,11 @@ public class HomeController extends BaseController {
         mmap.put("productTypeList", productTypeList);*/
         return "home/stores";
     }
+
+    @GetMapping("/home/fans")
+    public String fans(ModelMap mmap) {
+        /*List<Map<String,Object>> productTypeList = manageProductService.selectProductList();
+        mmap.put("productTypeList", productTypeList);*/
+        return "home/fans";
+    }
 }
