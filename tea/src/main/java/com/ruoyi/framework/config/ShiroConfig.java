@@ -260,6 +260,7 @@ public class ShiroConfig
         filterChainDefinitionMap.put("/home/**", "anon");
         //不拦截默认ip+端口的访问
         filterChainDefinitionMap.put("/", "anon");
+        filterChainDefinitionMap.put("/profile/**", "anon");
         filterChainDefinitionMap.put("/login", "anon,captchaValidate");
         // 注册相关
         filterChainDefinitionMap.put("/register", "anon,captchaValidate");
