@@ -77,7 +77,7 @@
 
         $("#pictureView").fileinput({
             'theme': 'explorer-fas',
-            'uploadUrl': prefix + '/uploadImg',
+            'uploadUrl': ctx + 'common/upload',
             allowedFileExtensions : ['jpg', 'png','jpeg'],
             autoReplace: true,
             maxFileSize: 3000,
@@ -105,7 +105,7 @@
 
         $("#coverView").fileinput({
             'theme': 'explorer-fas',
-            'uploadUrl': prefix + '/uploadImg',
+            'uploadUrl': ctx + 'common/upload',
             allowedFileExtensions : ['jpg', 'png','jpeg'],
             autoReplace: true,
             maxFileSize: 3000,
@@ -127,8 +127,8 @@
         });
 
         $("#pictureView").on("fileuploaded", function(event, data, proviewId, index) {
-            console.log(data.response.data);
-            $('#picture').val(data.response.data);
+            console.log(data.response);
+            $('#picture').val(data.response.fileName);
         });
 
         $("#pictureView").on("filecleared",function(event, data, msg){
@@ -142,13 +142,12 @@
 
         $("#coverView").on("fileuploaded", function(event, data, proviewId, index) {
             console.log("coverView");
-            console.log(data.response.data);
-            $('#cover').val(data.response.data);
+            console.log(data.response);
+            $('#cover').val(data.response.fileName);
         });
 
         $("#coverView").on("filecleared",function(event, data, msg){
             console.log("coverViewdel");
-            console.log("del");
             $('#cover').val("");
         });
 
